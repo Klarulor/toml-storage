@@ -14,6 +14,7 @@ connection_min = -2
 max_temp = 87.1
 min_temp = -17.76
 enabled = true
+isOk = true
 
 [servers]
 [servers.alpha]

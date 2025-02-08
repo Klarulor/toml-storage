@@ -19,7 +19,8 @@ const obj: TomlExample = {
         "connection_min": -2,
         "max_temp": 87.1,
         "min_temp": -17.76,
-        "enabled": true
+        "enabled": true,
+        isOk: true
     },
     "servers": {
         "alpha": {
@@ -69,6 +70,7 @@ interface Database {
     max_temp: number;
     min_temp: number;
     enabled: boolean;
+    isOk: boolean;
 }
 
 interface Server {
