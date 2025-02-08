@@ -67,6 +67,10 @@ export class TomlStorage<T extends object> {
 
     public read(cached: boolean = true): T {
         if (cached) return this._cache;
-        return this.readFile();
+        else{
+            const obj = this.readFile();
+            this._cache = obj;
+            return obj;
+        }
     }
 }
